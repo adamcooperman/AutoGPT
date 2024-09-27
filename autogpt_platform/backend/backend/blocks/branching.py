@@ -13,7 +13,7 @@ class ComparisonOperator(Enum):
     GREATER_THAN_OR_EQUAL = ">="
     LESS_THAN_OR_EQUAL = "<="
     
-class ConditionTestBlock(Block):
+class ConditionBlock(Block):
     class Input(BlockSchema):
         input_object: Any = SchemaField(
             description="Enter the input object or list for comparison",
@@ -68,9 +68,9 @@ class ConditionTestBlock(Block):
 
     def __init__(self):
         super().__init__(
-            id="74346365-854c-4012-ab74-8d1430334c09",
-            input_schema=ConditionTestBlock.Input,
-            output_schema=ConditionTestBlock.Output,
+            id="715696a0-e1da-45c8-b209-c2fa9c3b0be6",
+            input_schema=ConditionBlock.Input,
+            output_schema=ConditionBlock.Output,
             description="Handles conditional logic based on comparison operators with passthrough functionality",
             categories={BlockCategory.LOGIC},
             test_input={
