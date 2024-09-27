@@ -68,7 +68,7 @@ class ConditionBlock(Block):
 
     def __init__(self):
         super().__init__(
-            id="715696a0-e1da-45c8-b209-c2fa9c3b0be6",
+            id="74346365-854c-4012-ab74-8d1430334c09",
             input_schema=ConditionBlock.Input,
             output_schema=ConditionBlock.Output,
             description="Handles conditional logic based on comparison operators with passthrough functionality",
